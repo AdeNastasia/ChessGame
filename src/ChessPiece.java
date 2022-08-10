@@ -3,8 +3,26 @@ public abstract class ChessPiece {
     private String color; // or create it like enum?
     private String image;
     private int value;
-    int column;
-    int row;
+    private int x;
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    private int y;
+
 
     public String getImage() {
         return image;
