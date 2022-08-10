@@ -1,6 +1,6 @@
 public class Pawn extends ChessPiece {
-    public Pawn(ChessPieceKit typeOfPiece) {
-        super(typeOfPiece);
+    public Pawn(ChessPieceKit typeOfPiece, int x, int y) {
+        super(typeOfPiece, x, y);
     }
 
     @Override

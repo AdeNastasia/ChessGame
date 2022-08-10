@@ -1,6 +1,6 @@
 public class King extends ChessPiece {
-    public King(ChessPieceKit typeOfPiece) {
-        super(typeOfPiece);
+    public King(ChessPieceKit typeOfPiece, int x, int y) {
+        super(typeOfPiece, x, y);
     }
 
     @Override

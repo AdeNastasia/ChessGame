@@ -1,6 +1,6 @@
 public class Rook extends ChessPiece {
-    public Rook(ChessPieceKit typeOfPiece) {
-        super(typeOfPiece);
+    public Rook(ChessPieceKit typeOfPiece, int x, int y) {
+        super(typeOfPiece, x, y);
     }
 
     @Override

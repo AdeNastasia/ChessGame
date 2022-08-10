@@ -1,6 +1,6 @@
 public class EmptyCeil extends ChessPiece {
-    public EmptyCeil(ChessPieceKit typeOfPiece) {
-        super(typeOfPiece);
+    public EmptyCeil(ChessPieceKit typeOfPiece, int x, int y) {
+        super(typeOfPiece, x, y);
     }
 
     @Override

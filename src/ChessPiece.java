@@ -9,17 +9,17 @@ public abstract class ChessPiece {
         return x;
     }
 
-    public void setX(int x) {
+/*    public void setX(int x) {
         this.x = x;
-    }
+    }*/
 
     public int getY() {
         return y;
     }
 
-    public void setY(int y) {
+/*    public void setY(int y) {
         this.y = y;
-    }
+    }*/
 
     private int y;
 
@@ -31,11 +31,13 @@ public abstract class ChessPiece {
     public abstract boolean canMove();
     public abstract void move();
 
-    public ChessPiece(ChessPieceKit typeOfPiece) {
+    public ChessPiece(ChessPieceKit typeOfPiece, int x, int y) {
         this.typeOfPiece = typeOfPiece;
         this.color = typeOfPiece.isWhite() ? "WHITE" : "BLACK";
         this.image = typeOfPiece.getImage();
         this.value = typeOfPiece.getValue();
+        this.x = x;
+        this.y = y;
     }
 
 }
